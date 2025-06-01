@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Life Expectancy Prediction</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Pacifico"
+            rel="stylesheet"
+            type="text/css"
+            />
+        <link
+            href="https://fonts.googleapis.com/css?family=Arimo"
+            rel="stylesheet"
+            type="text/css"
+            />
+        <link
+            href="https://fonts.googleapis.com/css?family=Hind:300"
+            rel="stylesheet"
+            type="text/css"
+            />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+            rel="stylesheet"
+            type="text/css"
+            />
+        
+        <style>
+            /* Styling the login container */
+            .login {
+                width: 300px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                background-color: #f5f5f5;
+            }
+
+            /* Styling the form inputs */
+            .login input[type="number"],
+            .login button {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            /* Styling the form labels */
+            .login p {
+                margin: 0;
+                font-size: 14px;
+                color: #333;
+            }
+
+            /* Styling the form submit button */
+            .login button {
+                background-color: #4caf50;
+                color: white;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            /* Styling the form submit button on hover */
+            .login button:hover {
+                background-color: #45a049;
+            }
+
+            /* Styling the form title */
+            .login h1 {
+                font-family: "Pacifico", cursive;
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            /* Styling the small text */
+            .login small {
+                font-family: "Arimo", sans-serif;
+                font-size: 12px;
+                color: #666;
+            }
+
+            /* Styling the error message */
+            .error {
+                color: red;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+
+            .error-section {
+                background-color: #f8d7da;
+                color: red;
+                padding: 10px;
+                margin-top: 20px;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1><strong>Life Expectancy Prediction</strong></h1>
+            <!--Main Input for Receiving Query to our ML -->
+            <form action="/predict" method="POST">
+                <p style="text-align: left">
+                    <small><b>Year [ Between 1980 to 2005 ]</b></small>
+                </p>
+                <input
+                    type="number"
+                    
+            </form>
+        </div>
+    </body>
+
+
+
+
+
+
+
+
