@@ -58,7 +58,7 @@ def predict():
         errors =validate_input(input_data)
 
         if errors:
-            return render_template('index_html', errors=errors)
+            return render_template('index.html', errors=errors)
     
         # Convert the input data to a numpy array
         input_data = np.array(list(input_data.values())).reshape(1,-1)
@@ -79,7 +79,7 @@ def result():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
+
 
 
 
