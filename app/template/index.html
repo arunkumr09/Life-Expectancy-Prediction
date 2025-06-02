@@ -102,14 +102,87 @@
             <!--Main Input for Receiving Query to our ML -->
             <form action="/predict" method="POST">
                 <p style="text-align: left">
-                    <small><b>Year [ Between 1980 to 2005 ]</b></small>
+                    <small><b>Alcohol [ Between 0 to 20 ]</b></small>
                 </p>
                 <input
                     type="number"
-                    
+                    step="any"
+                    placeholder="Enter Alcohol"
+                    name="alcohol"
+                    required="required"
+                    />
+                
+                />
+                <p style="text-align: left">
+                    <small><b>Hepatitis B [ Between 0 to 100 ]</b></small>
+                </p>
+                <input
+                    type="number"
+                    placeholder="Enter Hepatitis B"
+                    name="hepatitis_b"
+                    required="required"
+                    />
+                
+                <p style="text-align: left">
+                    <small><b>BMI [ Between 0 to 100 ]</b></small>
+                </p>
+                <input
+                    type="number"
+                    step="any"
+                    placeholder="Enter BMI"
+                    name="bmi"
+                    required="required"
+                    />
+
+                <p style="text-align: left">
+                    <small><b>Polio [Between 0 to 100 ]</b></small>
+                </p>
+                <input
+                    type="number"
+                    step="any"
+                    placeholder="Enter Polio"
+                    required="required"
+                    />
+
+                <p style="text-align: left">
+                    <small><b>Diphtheria [Between 0 to 100 ]</b></small>
+                </p>
+                <input
+                    type="number"
+                    step="any"
+                    placeholder="Enter Diphtheria"
+                    required="required"
+                    />
+
+                <p style="text-align: left">
+                    <small><b>HIV/AIDS [ Between 0 to 50 ]</b></small>
+                </p>
+                <input
+                    type="number"
+                    step="any"
+                    placeholder="Enter HIV/AIDS"
+                    name="hiv_aids"
+                    required="required"
+                    />
+
+                {% if errors %}
+                <div class="error-section">
+                    <h2>Error:</h2>
+                    <ul>
+                        {% for error in errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">
+                    Predict
+                </button>
             </form>
         </div>
     </body>
+</html>
 
 
 
